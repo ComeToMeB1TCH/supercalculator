@@ -31,8 +31,11 @@ void SorticMimus3(string first, string second) {
     if (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 == 0)
         if (no_zero(Reverse(no_minuse(Reverse(no_minuse(first))))) == no_zero(Reverse(no_minuse(Reverse(no_minuse(second))))) && ((Kol_minuseDoNumbers(first) % 2 == 0 && Kol_minuse(Reverse(first)) % 2 != 0) || (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 == 0)))
             cout << "0";
+        else if(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))) > second)
+            cout << "-" << ProverkaMinus(no_zero(Reverse(no_minuse(Reverse(no_minuse(first))))), no_zero(Reverse(no_minuse(Reverse(no_minuse(second))))));
         else
-            cout << "-" << ProverkaPluse(no_zero(Reverse(no_minuse(Reverse(no_minuse(first))))), no_zero(Reverse(no_minuse(Reverse(no_minuse(second))))));
+            cout << ProverkaMinus(no_zero(Reverse(no_minuse(Reverse(no_minuse(second))))), no_zero(Reverse(no_minuse(Reverse(no_minuse(first))))));
+
     if (Kol_minuseDoNumbers(first) % 2 == 0 && Kol_minuse(Reverse(first)) % 2 == 0)
         cout << ProverkaPluse(no_zero(Reverse(no_minuse(Reverse(no_minuse(first))))), no_zero(Reverse(no_minuse(Reverse(no_minuse(second))))));
     if (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 != 0)
