@@ -1,10 +1,10 @@
 #include "supercalculator.h"
 
-string Multiplication(string a, string b) {
+string Multiplication(string first, string second) {
     string c = "0", reverse = "", summ_el = "";
-    for (int i = 0; i < Len(b); i++) {
-        for (int j = 0; j < Len(a); j++) {
-            summ_el = IntToString(CharToInt(b[Len(b) - i - 1]) * CharToInt(a[Len(a) - j - 1])) + zero(i + j - 1);
+    for (int i = 0; i < Len(second); i++) {
+        for (int j = 0; j < Len(first); j++) {
+            summ_el = IntToString(CharToInt(second[Len(second) - i - 1]) * CharToInt(first[Len(first) - j - 1])) + zero(i + j - 1);
             if (summ_el[0] != "0"[0])
                 c = ProverkaPluse(summ_el, c);
         }
