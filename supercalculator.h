@@ -3,6 +3,7 @@
 #include <chrono>
 #include <thread>
 #include <iostream>
+#include <string>
 #include <windows.h>
 
 using namespace std;
@@ -19,6 +20,7 @@ string Second_Num(string enter);
 string First_Num(string enter);
 string Minuse(string first, string second);
 string ProverkaPluse(string first, string second);
+bool Proverka(string enter);
 string ProverkaMinus(string first, string second);
 string ProverkaMultiplication(string first, string second);
 string Reverse(string enter);
@@ -33,11 +35,12 @@ void SorticMimus2(string first, string second);
 void SorticMimus3(string first, string second);
 void SorticMimus4(string first, string second);
 void SorticPluse1(string first, string second);
+void SorticPluse2(string first, string second);
 void SorticMultiplication1(string first, string second);
 void SorticMultiplication2(string first, string second);
 int Kol_minuse(string enter);
 int Kol_minuseDoNumbers(string enter);
-string Multiplication(string a, string b);
+string Multiplication(string first, string second);
 string IntToString(int enter);
 int CharToInt(char enter);
 string CompareMultiplication(string first, string second);
