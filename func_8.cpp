@@ -19,19 +19,19 @@ void SorticPluse2(string first, string second) {
         if (Kol_minuseDoNumbers(first) % 2 == 0 && Kol_minuse(Reverse(first)) % 2 != 0)
             return ProverkaMinus(second, Reverse(no_pluse(no_minuse(Reverse(no_pluse(no_minuse(first)))))));
         if (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 == 0)
-            return pluseminus(1) + ProverkaMinus(Reverse(no_pluse(no_minuse(Reverse(no_pluse(no_minuse(first)))))), second);
+            return pluseminus(0) + ProverkaMinus(Reverse(no_pluse(no_minuse(Reverse(no_pluse(no_minuse(first)))))), second);
         if (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 != 0)
-            return pluseminus(1) + ProverkaPluse(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))), second);
+            return pluseminus(0) + ProverkaPluse(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))), second);
         if (Kol_minuseDoNumbers(first) % 2 == 0 && Kol_minuse(Reverse(first)) % 2 == 0)
             return ProverkaPluse(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))), second);
     }
     else {
         if (Kol_minuseDoNumbers(first) % 2 == 0 && Kol_minuse(Reverse(first)) % 2 != 0)
-            return pluseminuse(1) + ProverkaMinus(second, Reverse(no_pluse(no_minuse(Reverse(no_pluse(no_minuse(first)))))));
+            return pluseminuse(0) + ProverkaMinus(second, Reverse(no_pluse(no_minuse(Reverse(no_pluse(no_minuse(first)))))));
         if (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 == 0)
             return ProverkaMinus(second, Reverse(no_pluse(no_minuse(Reverse(no_pluse(no_minuse(first)))))));
         if (Kol_minuseDoNumbers(first) % 2 != 0 && Kol_minuse(Reverse(first)) % 2 != 0)
-            return pluseminus(1) + ProverkaPluse(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))), second);
+            return pluseminus(0) + ProverkaPluse(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))), second);
         if (Kol_minuseDoNumbers(first) % 2 == 0 && Kol_minuse(Reverse(first)) % 2 == 0)
             return ProverkaPluse(Reverse(no_pluse(no_minuse(Reverse(no_minuse(first))))), second);
     }
