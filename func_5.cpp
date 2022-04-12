@@ -45,23 +45,25 @@ void SorticMimus3(string first, string second) {
 
 void SorticMimus4(string first, string second) {
     if (first[0] == '-' && ProverkaMinus(no_minuse(no_zero(first)), no_minuse(no_zero(second))) == "Error" && Reverse(first)[0] != '-' && Kol_minuseDoNumbers(first) % 2 != 0)
-    cout << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << ProverkaMinus(no_zero(first), no_zero(second));
+    else if (Len(second) > Len(first))
+        cout << "-" << ProverkaMinus(no_zero(second), no_zero(first));
     else if (ProverkaMinus(no_zero(first), no_zero(second)) == "Error" && first[0] != '-' && Reverse(first)[0] != '-')
-    cout << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << ProverkaMinus(no_zero(first), no_zero(second));
     else if (first == second && first[0] != '-' && Reverse(first)[1] != '-')
-    cout << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << ProverkaMinus(no_zero(first), no_zero(second));
     else if (Len(no_zero(first)) == Len(no_zero(second)) && second[0] > first[0] && first[0] != '0' && second[0] != '0' && first[0] != '-' && Reverse(first)[0] != '-')
-    cout << "-" << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << "-" << ProverkaMinus(no_zero(first), no_zero(second));
     else if (Len(first) == Len(no_zero(second)) && first[0] == '0' || second[0] == '0' && first[0] != '-' && Reverse(first)[0] != '-')
-    cout << "-" << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << "-" << ProverkaMinus(no_zero(first), no_zero(second));
     else if (Len(no_zero(first)) == Len(no_zero(second)) && first[0] == '0' || second[0] == '0' && first[0] != '-' && Reverse(first)[0] != '-')
-    cout << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << ProverkaMinus(no_zero(first), no_zero(second));
     else if (first > second && first[0] != '-' && Reverse(first)[0] != '-')
-    cout << ProverkaMinus(no_zero(first), no_zero(second));
+        cout << ProverkaMinus(no_zero(first), no_zero(second));
     else if (Reverse(first)[0] == '-' && first[0] != '-')
-    SorticMimus2(first, second);
+        SorticMimus2(first, second);
     else if (first[0] == '-' && ProverkaMinus(no_zero(first), no_zero(second)) == "Error")
-    SorticMimus3(first, second);
+        SorticMimus3(first, second);
     else if (Kol_minuseDoNumbers(first) % 2 != 0)
         cout << "-" << ProverkaPluse(no_zero(first), no_zero(second));
     else
