@@ -40,6 +40,7 @@ void SorticMultiplication2(string first, string second);
 int Kol_minuse(string enter);
 int Kol_minuseDoNumbers(string enter);
 string Multiplication(string first, string second);
+string no_Multiplication(string enter);
 string IntToString(int enter);
 int CharToInt(char enter);
 string CompareMultiplication(string first, string second);
