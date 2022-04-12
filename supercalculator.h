@@ -45,6 +45,7 @@ string IntToString(int enter);
 int CharToInt(char enter);
 string CompareMultiplication(string first, string second);
 void icon();
+string pluseminus(int len);
 void indent();
 
 #endif // CALC_H_INCLUDED
